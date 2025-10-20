@@ -1,8 +1,11 @@
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 from openai import OpenAI
+import logging
+
 
 app = FastAPI()
+logger = logging.getLogger("uvicorn")
 
 @app.get("/", response_class=HTMLResponse)
 # def instant2():
@@ -18,7 +21,7 @@ app = FastAPI()
 #     return html
 
 def instant():
-    print("Instant2 is working")
+    logger.info("Instant2 is working")
 
     # Dummy message instead of calling OpenAI
     dummy_reply = (
