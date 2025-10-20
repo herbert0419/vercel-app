@@ -5,7 +5,7 @@ from openai import OpenAI
 app = FastAPI()
 
 @app.get("/", response_class=HTMLResponse)
-def instant():
+def instant2():
 #     client = OpenAI()
 #     message = """
 # You are on a website that has just been deployed to production for the first time!
