@@ -1,3 +1,6 @@
 fastapi
 uvicorn
 openai
+requests
+huggingface-hub
+python-dotenv
